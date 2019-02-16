@@ -43,7 +43,7 @@ func main() {
 		}
 		v, err := strconv.Atoi(args[1])
 		if err != nil {
-			fmt.Println("USAGE:calc add <interger>")
+			fmt.Println("USAGE:calc sqrt <interger>")
 			return
 		}
 

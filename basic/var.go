@@ -29,7 +29,7 @@ const (
 	Wednesday
 	Thursday
 	Friday
-	sturday
+	Sturday
 	numerOfDays
 )
 

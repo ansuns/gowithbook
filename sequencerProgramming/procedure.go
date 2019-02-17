@@ -29,8 +29,9 @@ func main() {
 		fmt.Println("aa")
 	default:
 		fmt.Println("not aa")
-
 	}
+
+	testFor()
 }
 
 func first(a int) int {
@@ -38,5 +39,16 @@ func first(a int) int {
 		return 4
 	} else {
 		return a * a
+	}
+}
+
+func testFor() {
+	sum := 0
+	for {
+		sum++
+		if sum > 10 {
+			break
+		}
+		fmt.Println(sum)
 	}
 }

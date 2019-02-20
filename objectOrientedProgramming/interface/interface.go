@@ -24,6 +24,7 @@ type Teacher struct {
 func (t *Teacher) Say() {
 	fmt.Println("i‘m teacher")
 }
+
 func main() {
 	//已经有两个类型Student,Teacher实现了Human接口，一个接口的不同提现
 	var h Human

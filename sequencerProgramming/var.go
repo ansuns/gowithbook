@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//纯粹变量声明用var
 // 以下是声明变量
 var v1 int
 var (

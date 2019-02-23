@@ -1,13 +1,22 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
+	go Add()
 	for i := 0; i < 10; i++ {
-		go Add(i, i)
+		fmt.Println("first Add")
+		time.Sleep(time.Second)
+
 	}
 }
 
-func Add(x, y int) {
-	fmt.Println("x + y : ", x+y)
+func Add() {
+	for {
+		fmt.Println("new task Add() ")
+		time.Sleep(time.Second)
+	}
 }

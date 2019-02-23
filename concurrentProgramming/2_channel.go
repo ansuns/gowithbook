@@ -1,17 +1,24 @@
 package main
 
-//通过channerl 实现同步
+//通过channel 实现同步
 import (
 	"fmt"
 	"time"
 )
 
-//全局变量channerl
+//全局变量channel
 var ch = make(chan int)
 
 func main() {
-	go person1()
+	//这里不分先后，因为要同步：
+	/**
 	go person2()
+	go person1()
+	结果一样
+	 */
+	go person2()
+	go person1()
+
 	//主协程10s后结束
 	time.Sleep(time.Second * 10)
 }

@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+//通过chnnel实现同步和数据交互
 func main() {
 	ch := make(chan string)
 

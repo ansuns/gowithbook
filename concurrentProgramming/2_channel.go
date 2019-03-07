@@ -38,6 +38,6 @@ func person1() {
 }
 
 func person2() {
-	<-ch //从管道去数据,接受，如果管道没有数据，则堵塞
+	<-ch //从管道取数据,接收，如果管道没有数据，则堵塞
 	Printer("World")
 }

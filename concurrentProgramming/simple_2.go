@@ -22,4 +22,10 @@ func main() {
 			close(timeout) //关闭chan
 			fmt.Println("请求超时")
 	}
+
+	//判断一个chan是否已关闭
+	_, ok := <-timeout
+	if ok == false {
+		fmt.Println("timeout chan 已关闭")
+	}
 }

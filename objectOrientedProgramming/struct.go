@@ -4,7 +4,7 @@ import "fmt"
 
 /**
 类似其他语言的class 类
-*/
+ */
 
 //定义一个sturcy
 type Rect struct {

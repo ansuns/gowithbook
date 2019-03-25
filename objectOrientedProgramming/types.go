@@ -7,7 +7,7 @@ type Interger int //定义一个新的类型Interger(使用 type 关键字可以
 /**
 给Interger类型添加 Less 方法，int原来的方法被Integer继承
 增加一个Less方法
-*/
+ */
 func (a Interger) Less(b Interger) bool {
 	return a < b
 }

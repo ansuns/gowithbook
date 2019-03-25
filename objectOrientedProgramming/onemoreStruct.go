@@ -13,7 +13,7 @@ func (r *Recta) Area() float64 {
 
 func main() {
 	//r := new(Recta)
-	r := &Recta{0, 0, 4, 9}
+	r := &Recta{0,0,4,9}
 	res := r.Area()
 	fmt.Println(res)
 }

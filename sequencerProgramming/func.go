@@ -13,7 +13,7 @@ func main() {
 		fmt.Println(sum)
 	}
 
-	ret2 := getSum(1, 2, 3, 4);
+	ret2 := getSum(1, 2, 3, 4)
 	fmt.Println(ret2)
 	fmt.Println("------------------------------------------------------------------------")
 	varArgs(sum, err, ret2)
@@ -30,7 +30,7 @@ func Add(val1, val2 int) (sum int, err error) {
 
 /**
 不定参数
- */
+*/
 func getSum(args ...int) int {
 	sum := 0
 	for _, v := range args {
@@ -42,7 +42,7 @@ func getSum(args ...int) int {
 
 /**
 任意类型不定参数
- */
+*/
 func varArgs(args ...interface{}) {
 	for _, arg := range args {
 		switch arg.(type) {

@@ -15,7 +15,7 @@ func main() {
 	go person2()
 	go person1()
 	结果一样
-	 */
+	*/
 	go person2()
 	go person1()
 

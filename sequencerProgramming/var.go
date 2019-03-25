@@ -9,7 +9,7 @@ var (
 	v2 string
 	v3 int
 )
-var v4 [10] int       //数组
+var v4 [10]int        //数组
 var v6 *int           //指针
 var v7 map[string]int //map,key 为sring类型，value 为int类型
 var v8 func(a int) int
@@ -59,7 +59,7 @@ func main() {
 
 /*
 获取名字
- */
+*/
 func getName() (firstName, secondName, nickName string) {
 	firstName = "张"
 	secondName = "三"

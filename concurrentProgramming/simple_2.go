@@ -1,8 +1,8 @@
 package main
 
 import (
-	"time"
 	"fmt"
+	"time"
 )
 
 var ch1 chan int
@@ -17,10 +17,10 @@ func main() {
 	}()
 
 	select {
-		case <-ch1:
-		case <-timeout: //已超时chan读出到了数据
-			close(timeout) //关闭chan
-			fmt.Println("请求超时")
+	case <-ch1:
+	case <-timeout: //已超时chan读出到了数据
+		close(timeout) //关闭chan
+		fmt.Println("请求超时")
 	}
 
 	//判断一个chan是否已关闭

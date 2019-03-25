@@ -22,7 +22,7 @@ func main() {
 	fmt.Println("Result:", sum1, sum2, sum1+sum2)
 }
 
-func sum(values [] int, resultChan chan int) {
+func sum(values []int, resultChan chan int) {
 	sum := 0
 	for _, value := range values {
 		sum += value

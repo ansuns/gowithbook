@@ -1,11 +1,11 @@
 package main
 
 import (
-	"os"
-	"fmt"
-	"net"
 	"bytes"
+	"fmt"
 	"io"
+	"net"
+	"os"
 )
 
 func main() {
@@ -35,7 +35,7 @@ func checkErrorr(err error) {
 func readFullys(conn net.Conn) ([]byte, error) {
 	defer conn.Close()
 	result := bytes.NewBuffer(nil)
-	var buf [512] byte
+	var buf [512]byte
 	for {
 		n, err := conn.Read(buf[0:])
 		result.Write(buf[0:n])

@@ -4,7 +4,7 @@ import "fmt"
 
 /**
 流程控制
- */
+*/
 
 func main() {
 	val := first(7)

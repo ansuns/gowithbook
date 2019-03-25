@@ -14,7 +14,7 @@ func main() {
 		go Count(chs[i])
 	}
 
-	for _, ch := range (chs) {
+	for _, ch := range chs {
 		<-ch
 	}
 }

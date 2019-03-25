@@ -2,11 +2,11 @@ package main
 
 import "fmt"
 
-var array [5] int //数组定义
+var array [5]int //数组定义
 
 func main() {
 	//数组赋值
-	array = [5] int{1, 2, 3, 4, 5}
+	array = [5]int{1, 2, 3, 4, 5}
 	var slice1 []int = array[:5] //数组切片 0-5
 	for _, v := range slice1 {
 		fmt.Println("slice1 v: ", v)

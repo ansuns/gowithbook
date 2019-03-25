@@ -12,7 +12,7 @@ func main() {
 
 /*
 获取名字
- */
+*/
 func getName() (firstName, secondName, nickName string) {
 	firstName = "张"
 	secondName = "三"
@@ -22,7 +22,7 @@ func getName() (firstName, secondName, nickName string) {
 
 /**
 没有明确赋值时，返回默认值，并不是所遇的返回值都必须赋值
- */
+*/
 func orderInfo(order_id int) (info []int, err error) {
 	return
 }
